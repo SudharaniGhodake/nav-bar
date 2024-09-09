@@ -1,0 +1,125 @@
+ body {
+     margin: 0;
+     font-family: "Nunito Sans", sans-serif;
+     /* background-color: blanchedalmond; */
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+ header {
+     box-shadow: 0px 1px 4px 0px #0000001A;
+     padding-inline: 40px;
+     /* padding-block: 8px; */
+ }
+
+ header>div {
+     display: flex;
+     justify-content: space-between;
+     /* align-items: center; */
+     font-weight: 700;
+     max-width: 1200px;
+     margin-inline: auto;
+ }
+
+ .logo-img {
+     width: 50px;
+ }
+
+ .logo-container {
+
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     font-weight: 700;
+     gap: 8px;
+
+ }
+
+ .nav-user-container {
+     display: flex;
+     align-items: center;
+     flex-grow: 1;
+
+ }
+
+ .courses {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     cursor: pointer;
+     position: relative;
+ }
+ul{
+    padding: 0;
+    margin: 0;;
+}
+ .courses >img{
+    transition: transform 0.25s ease-in-out;
+ }
+ .courses:hover >img{
+    transform: rotate(-180deg);
+ }
+ a {
+     text-decoration-line: none;
+     color: inherit;
+ }
+
+ li {
+     list-style-type: none;
+ }
+
+ .courses ul {
+     /* display: none; */
+     opacity: 0;
+     position: absolute;
+     background-color: white;
+     border-radius: 5px;
+     border: 1.5px solid #e9eaeb;
+     box-shadow: 0px 4px 10px 0px rgba(30,27,27,0.1);
+     top: 250%;
+     font-size: 14px;
+     padding: 16px 20px;
+     width: 250px;
+     pointer-events: none;
+ }
+
+ .courses:hover ul{
+    opacity: 1;
+    pointer-events: all;
+    top: 150%;
+ }
+   
+ .courses ul >li+li{
+    margin-top: 8px;
+ }
+ nav {
+     /* margin-left: auto;
+     margin-right: auto; */
+     margin-inline: auto;
+
+ }
+
+ nav>ul {
+     display: flex;
+     /* padding-left: 0; */
+     gap: 48px;
+
+ }
+
+ nav>ul>li{
+    padding-block: 10px;
+ }
+
+ .user {
+     display: flex;
+     align-items: center;
+     gap: 16px;
+     font-size: 14px;
+
+ }
+
+ .avatar {
+     width: 40px;
+ }
